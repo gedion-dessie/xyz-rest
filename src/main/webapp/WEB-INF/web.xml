@@ -21,7 +21,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringApplication</servlet-name>
-        <url-pattern>/rest/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
     <filter>
         <filter-name>springSecurityFilterChain</filter-name>
@@ -29,7 +29,7 @@
     </filter>
     <filter-mapping>
         <filter-name>springSecurityFilterChain</filter-name>
-        <url-pattern>/rest/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </filter-mapping>
     <welcome-file-list>
     	<welcome-file>index.html</welcome-file>
