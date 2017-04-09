@@ -1,20 +1,31 @@
-package com.xyzstaffing.xyzrest.domain;
+package com.xyzstaffing.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
+@Embeddable
 public class Person implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 642264462764926668L;
-	
+
+	@Column
 	private String firstName;
+	@Column
 	private String lastName;
+	@Column
 	private String phoneNumber;
+	@Column
 	private String email;
+
+	@Embedded
 	private Address address;
-	
+
+	public Person() {
+	}
+
 	public Person(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -60,7 +71,5 @@ public class Person implements Serializable {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
-	
-	
+
 }

@@ -1,11 +1,11 @@
-package com.xyzstaffing.xyzrest.domain;
+package com.xyzstaffing.domain;
 
 public enum USState {
 	IA("Iowa"),
 	IL("Illinois");
 	
 	private String fullName;
-	
+
 	private USState(String fullName) {
 		this.fullName= fullName;
 	}
